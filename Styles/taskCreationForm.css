@@ -1,0 +1,96 @@
+body {
+    background: #373b38;
+    font-family: Georgia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+.Task-Create {
+    background-color: #2b2e2b;
+    padding: 2.5em;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.close-button {
+    position:absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+h1.new-task-header {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    border: none;
+    background: #3e423e;
+    color:#ffffff
+}
+
+input:focus {
+    background: #3e423e;
+    outline: 2px solid #1b53e0;
+}
+
+input:not(:placeholder-shown) {
+    color:#ffffff;
+}
+
+input::placeholder {
+    color: #bfbfbf;
+}
+
+.create-button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1.2rem 0 0 0;
+    background: #1b53e0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color:#000000;
+    display: block;
+}
+
+.create-button:hover {
+    background: #195bff;
+}
+
+input, .create-button {
+    box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    background-color: #3e423e !important;
+    -webkit-box-shadow: 0 0 0 1000px #3e423e inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #ffffff !important;
+}
+

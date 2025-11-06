@@ -1,0 +1,38 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1000 1000"
+  fill="currentColor"
+  stroke="currentColor">
+
+  <!-- Face Circle -->
+  <circle
+    r="65.266655"
+    cx="940.96454"
+    cy="324.36865"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="16" />
+
+  <!-- Eyes -->
+  <ellipse
+    rx="8.1583309"
+    ry="13.053329"
+    cx="921.38452"
+    cy="301.52533"
+    fill="currentColor" />
+
+  <ellipse
+    transform="scale(-1,1)"
+    cx="-960.54449"
+    cy="301.52533"
+    ry="13.053329"
+    rx="8.1583309"
+    fill="currentColor" />
+
+  <!-- Smile -->
+  <path
+    d="m 901.80453,340.68534 a 44.054988,44.054988 0 0 0 78.31998,0 42.423322,42.423322 0 0 1 -78.31998,0"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="16" />
+</svg>

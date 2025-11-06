@@ -1,0 +1,122 @@
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.suggestedTaskCardMood,
+.suggestedTaskCardWeather {
+    background: #2b2e2b;
+    border-radius: 12px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.suggestedTaskMood:hover,
+.suggestedTaskWeather:hover {
+    transform: translateX(3px);
+    box-shadow: 0 0 15px #1b53e0;
+}
+
+.task-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    color: #d0d3d9;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 0.85rem;
+    color: #bfbfbf;
+}
+
+.time {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #bfbfbf;
+}
+
+.duration {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+    color: #bfbfbf;
+}
+
+
+.check-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #1b53e0;
+    background: #2b2e2b;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    z-index: 2;
+}
+
+
+.check-btn::after {
+    content: "✔";
+    font-size: 14px;
+    color: #1b53e0;
+    transition: 0.2s ease;
+}
+
+
+.check-btn.checked {
+    background: #1b53e0;
+}
+
+.check-btn.checked::after {
+    color: #bfbfbf;
+}
+
+.moodIcon,
+.weatherIcon {
+    width: 28px;
+    height: 28px;
+    position:absolute;
+    bottom: 8px;
+    right: 6.5px;
+    color:#1b53e0;
+    background: #2b2e2b;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.basedOn {
+    position:absolute;
+    right: 8px;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.basedOn span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color:#bfbfbf;
+    opacity: 0.75;
+    white-space: nowrap;
+}
